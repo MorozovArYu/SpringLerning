@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="classpath:myApp.properties"/><!--Пример указания файла properties-->
+
 
     <bean id="myPet"
           class="com.gmail.morozowau.dependcy_injection.Dog">
@@ -15,8 +17,9 @@
     <bean id="myPerson"
           class="com.gmail.morozowau.dependcy_injection.Person">
         <property name="pet" ref="myPet"/>
-        <property name="surName" value="Morozov"/>
-        <property name="age" value= "24"/>
+
+        <property name="surName" value="${person.surname}"/>
+        <property name="age" value= "${person.age}"/>
     </bean>
 
 
