@@ -1,7 +1,8 @@
 package com.gmail.morozowau.dependcy_injection;
 
-import com.gmail.morozowau.dependcy_injection.Cat;
-import com.gmail.morozowau.dependcy_injection.Pet;
+import com.gmail.morozowau.Cat;
+import com.gmail.morozowau.Person;
+import com.gmail.morozowau.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test1 {

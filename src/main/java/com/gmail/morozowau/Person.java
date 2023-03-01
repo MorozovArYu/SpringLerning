@@ -1,4 +1,4 @@
-package com.gmail.morozowau.dependcy_injection;
+package com.gmail.morozowau;
 
 public class Person {
     private Pet pet;

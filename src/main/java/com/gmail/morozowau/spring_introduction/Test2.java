@@ -1,5 +1,6 @@
 package com.gmail.morozowau.spring_introduction;
 
+import com.gmail.morozowau.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test2 {

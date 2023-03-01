@@ -1,6 +1,4 @@
-package com.gmail.morozowau.dependcy_injection;
-
-import com.gmail.morozowau.dependcy_injection.Pet;
+package com.gmail.morozowau;
 
 public class Dog implements Pet {
     public Dog() {
