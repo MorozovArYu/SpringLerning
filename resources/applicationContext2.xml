@@ -7,17 +7,17 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     <!--First example-->
-<!--    <bean id="myPet"
-          class="com.gmail.morozowau.Dog"
-          scope="singleton">
-    </bean>-->
+    <!--    <bean id="myPet"
+              class="com.gmail.morozowau.Dog"
+              scope="singleton">
+        </bean>-->
 
     <!--Second Example-->
     <bean id="myPet"
           class="com.gmail.morozowau.Dog"
-          scope="prototype">
+          init-method="init"
+          destroy-method="destroy">
     </bean>
-
 
 
 </beans>
