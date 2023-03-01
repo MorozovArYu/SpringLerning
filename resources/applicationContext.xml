@@ -9,12 +9,13 @@
 
 
     <bean id="myPet"
-          class="com.gmail.morozowau.dependcy_injection.Cat">
+          class="com.gmail.morozowau.dependcy_injection.Dog">
     </bean>
 
     <bean id="myPerson"
           class="com.gmail.morozowau.dependcy_injection.Person">
-        <constructor-arg ref="myPet"/> <!--Внедрение зависимости через конструктор-->
+        <property name="pet" ref="myPet"/> <!--Внедрение с помощью сеттора-->
+
     </bean>
 
 

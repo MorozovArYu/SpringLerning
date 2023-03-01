@@ -8,8 +8,17 @@ public class Person {
         this.pet = pet;
     }
 
+    public Person() {
+        System.out.println("Person bean is created"); // Diagnostic
+    }
+
     public void callYourPet(){
         System.out.println("Hello my pet");
         pet.say();
+    }
+
+    public void setPet(Pet pet) {
+        System.out.println("Class person: set pet"); // Diagnostic
+        this.pet = pet;
     }
 }
