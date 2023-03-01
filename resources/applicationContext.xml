@@ -12,5 +12,10 @@
           class="com.gmail.morozowau.dependcy_injection.Cat">
     </bean>
 
+    <bean id="myPerson"
+          class="com.gmail.morozowau.dependcy_injection.Person">
+        <constructor-arg ref="myPet"/> <!--Внедрение зависимости через конструктор-->
+    </bean>
+
 
 </beans>
