@@ -1,4 +1,4 @@
-package com.gmail.morozowau.configuration_with_annotation;
+package com.gmail.morozowau.configuration_with_annotation.Component;
 
 import com.gmail.morozowau.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
