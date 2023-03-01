@@ -2,7 +2,7 @@ package com.gmail.morozowau;
 
 import org.springframework.stereotype.Component;
 
-@Component() // Указываем ID
+@Component("CatBean")
 public class Cat implements Pet {
     public Cat() {
         System.out.println("Cat bean is created"); // Diagnostic

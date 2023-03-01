@@ -1,19 +1,24 @@
 package com.gmail.morozowau;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("PersonBean")
 public class Person {
     private Pet pet;
     private String surName;
     private int age;
 
 
+    @Autowired
     public Person(Pet pet) {
         System.out.println("Person bean is created"); // Diagnostic
         this.pet = pet;
     }
 
-    public Person() {
-        System.out.println("Person bean is created"); // Diagnostic
-    }
+//    public Person() {
+//        System.out.println("Person bean is created"); // Diagnostic
+//    }
 
     public void callYourPet(){
         System.out.println("Hello my pet");
