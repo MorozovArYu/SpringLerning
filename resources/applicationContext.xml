@@ -14,8 +14,9 @@
 
     <bean id="myPerson"
           class="com.gmail.morozowau.dependcy_injection.Person">
-        <property name="pet" ref="myPet"/> <!--Внедрение с помощью сеттора-->
-
+        <property name="pet" ref="myPet"/>
+        <property name="surName" value="Morozov"/>
+        <property name="age" value= "24"/>
     </bean>
 
 
