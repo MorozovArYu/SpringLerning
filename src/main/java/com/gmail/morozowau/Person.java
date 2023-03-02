@@ -8,8 +8,6 @@ import org.springframework.stereotype.Component;
 @Component("PersonBean")
 public class Person {
 
-    @Autowired
-    @Qualifier("cat")
     private Pet pet;
 
 //    @Value("${person.surname}") // example 2
@@ -33,8 +31,7 @@ public class Person {
         pet.say();
     }
 
-    @Autowired
-    @Qualifier("cat")
+
     public void setPet(Pet pet) {
         System.out.println("Class person: set pet"); // Diagnostic
         this.pet = pet;
