@@ -3,11 +3,7 @@ package com.gmail.morozowau;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
-@Component("dog")
-@Scope("prototype")
 public class Dog implements Pet {
     public Dog() {
         System.out.println("Dog bean is created"); // Diagnostic
@@ -19,13 +15,11 @@ public class Dog implements Pet {
     }
 
 
-    @PostConstruct
     public void init() {
         System.out.println("Class Dog: init method");
     }
 
 
-    @PreDestroy
     public void destroy() {
         System.out.println("Class Dog: destroy method");
     }
