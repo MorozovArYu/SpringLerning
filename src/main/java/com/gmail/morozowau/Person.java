@@ -10,9 +10,9 @@ public class Person {
 
     private Pet pet;
 
-//    @Value("${person.surname}") // example 2
+    @Value("${person.surname}") // example 2
     private String surName;
-//    @Value("24") // example 1
+    @Value("${person.age}") // example 1
     private int age;
 
 

@@ -10,11 +10,14 @@ public class Test {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);
 
-        Pet cat1 = context.getBean("catBean", Pet.class);
+        /*Pet cat1 = context.getBean("catBean", Pet.class);
         Pet cat2 = context.getBean("catBean", Pet.class);
-        cat1.say();
+        cat1.say();*/
 
-/*        Person person = context.getBean("PersonBean", Person.class);
-        person.callYourPet();*/
+
+
+        Person person = context.getBean("personBean", Person.class);
+        System.out.println(person.getSurName());
+        System.out.println(person.getAge());
     }
 }
