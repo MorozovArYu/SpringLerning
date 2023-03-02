@@ -17,8 +17,6 @@ public class IntroductionTest {
 
         System.out.println(book.getName());
 
-        library.getBook(book);
-        library.getMagazine(2,15);
 
 
 
