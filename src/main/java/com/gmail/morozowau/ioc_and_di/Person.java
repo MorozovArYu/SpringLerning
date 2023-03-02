@@ -1,9 +1,6 @@
-package com.gmail.morozowau;
+package com.gmail.morozowau.ioc_and_di;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 
 public class Person {

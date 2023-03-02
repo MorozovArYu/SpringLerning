@@ -1,7 +1,6 @@
-package com.gmail.morozowau.configuration_with_annotation.Qualifier;
+package com.gmail.morozowau.ioc_and_di.configuration_with_annotation.Qualifier;
 
-import com.gmail.morozowau.Person;
-import com.gmail.morozowau.Pet;
+import com.gmail.morozowau.ioc_and_di.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ConfigWithAnnotations {

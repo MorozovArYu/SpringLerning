@@ -1,6 +1,6 @@
-package com.gmail.morozowau.bean_life_cycle;
+package com.gmail.morozowau.ioc_and_di.bean_life_cycle;
 
-import com.gmail.morozowau.Dog;
+import com.gmail.morozowau.ioc_and_di.Dog;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanLifeCycle {

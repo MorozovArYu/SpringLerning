@@ -11,11 +11,11 @@
 
 
     <bean id="myPet"
-          class="com.gmail.morozowau.Dog">
+          class="com.gmail.morozowau.ioc_and_di.Dog">
     </bean>
 
     <bean id="myPerson"
-          class="com.gmail.morozowau.Person">
+          class="com.gmail.morozowau.ioc_and_di.Person">
         <property name="pet" ref="myPet"/>
 
         <property name="surName" value="${person.surname}"/>

@@ -1,8 +1,6 @@
-package com.gmail.morozowau.configuration_with_javacode;
+package com.gmail.morozowau.ioc_and_di.configuration_with_javacode;
 
-import com.gmail.morozowau.Cat;
-import com.gmail.morozowau.Person;
-import com.gmail.morozowau.Pet;
+import com.gmail.morozowau.ioc_and_di.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Test {

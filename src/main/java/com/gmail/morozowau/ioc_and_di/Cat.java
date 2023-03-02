@@ -1,6 +1,4 @@
-package com.gmail.morozowau;
-
-import org.springframework.stereotype.Component;
+package com.gmail.morozowau.ioc_and_di;
 
 
 public class Cat implements Pet {

@@ -8,13 +8,13 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
     <!--First example-->
     <!--    <bean id="myPet"
-              class="com.gmail.morozowau.Dog"
+              class="com.gmail.morozowau.ioc_and_di.Dog"
               scope="singleton">
         </bean>-->
 
     <!--Second Example-->
     <bean id="myPet"
-          class="com.gmail.morozowau.Dog"
+          class="com.gmail.morozowau.ioc_and_di.Dog"
           init-method="init"
           destroy-method="destroy">
     </bean>

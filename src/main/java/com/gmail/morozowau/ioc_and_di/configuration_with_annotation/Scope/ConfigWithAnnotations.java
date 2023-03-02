@@ -1,7 +1,7 @@
-package com.gmail.morozowau.configuration_with_annotation.Autowired;
+package com.gmail.morozowau.ioc_and_di.configuration_with_annotation.Scope;
 
-import com.gmail.morozowau.Person;
-import com.gmail.morozowau.Pet;
+import com.gmail.morozowau.ioc_and_di.Dog;
+import com.gmail.morozowau.ioc_and_di.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ConfigWithAnnotations {
@@ -9,10 +9,13 @@ public class ConfigWithAnnotations {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext3.xml");
 
-//        Pet pet = context.getBean("cat", Pet.class);
-//        pet.say();
         Person person = context.getBean("PersonBean", Person.class);
-        person.callYourPet();
+//        person.callYourPet();
+        Dog myDog = context.getBean("dog", Dog.class);
+        Dog yourDog = context.getBean("dog", Dog.class);
+
+        System.out.println("Variables are the same ? " + (myDog == yourDog));
+
         context.close();
     }
 }

@@ -1,6 +1,6 @@
-package com.gmail.morozowau.bean_scope;
+package com.gmail.morozowau.ioc_and_di.bean_scope;
 
-import com.gmail.morozowau.Pet;
+import com.gmail.morozowau.ioc_and_di.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanScope {

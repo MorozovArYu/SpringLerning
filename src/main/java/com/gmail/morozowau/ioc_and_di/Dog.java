@@ -1,7 +1,4 @@
-package com.gmail.morozowau;
-
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
+package com.gmail.morozowau.ioc_and_di;
 
 
 public class Dog implements Pet {
