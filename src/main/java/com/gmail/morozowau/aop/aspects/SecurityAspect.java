@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(20)
 public class SecurityAspect {
-    @Before("com.gmail.morozowau.aop.aspects.Pointcuts.allAddMethods()")
+/*    @Before("com.gmail.morozowau.aop.aspects.Pointcuts.allAddMethods()")
     public void beforeAddSecurityAdvice() {
         System.out.println("beforeGetSecurityAdvice: Rights checking ...\n");
-    }
+    }*/
 }

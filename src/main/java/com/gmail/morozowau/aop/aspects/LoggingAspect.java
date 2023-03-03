@@ -22,7 +22,7 @@ public class LoggingAspect {
     // Pointcut declaration
 
 
-    @Before("com.gmail.morozowau.aop.aspects.Pointcuts.allAddMethods()")
+   /* @Before("com.gmail.morozowau.aop.aspects.Pointcuts.allAddMethods()")
     public void beforeAddLoggingAdvice(JoinPoint joinPoint) {
         System.out.println("<><><><><><><><><><><><><><><><><><><><><><><><><><>");
         System.out.println("beforeGetLoggingAdvice: Logging ...\n");
@@ -43,7 +43,7 @@ public class LoggingAspect {
         }
         System.out.println("<><><><><><><><><><><><><><><><><><><><><><><><><><>\n");
 
-    }
+    }*/
 
 
 }

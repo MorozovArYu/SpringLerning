@@ -16,5 +16,6 @@ public class JoinPointTest {
 /*        uniLibrary.getMagazine();
         uniLibrary.returnMagazine();
         uniLibrary.addMagazine();*/
+        context.close();
     }
 }
