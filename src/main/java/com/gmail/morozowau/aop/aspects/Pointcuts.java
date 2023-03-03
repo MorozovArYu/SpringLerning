@@ -4,7 +4,7 @@ import org.aspectj.lang.annotation.Pointcut;
 
 
 public class Pointcuts {
-    @Pointcut("execution(* get*())") // Объявление pointcut для многоразового его использования
-    public void pointcut_reference() {
+    @Pointcut("execution(* add*(..))") // Объявление pointcut для многоразового его использования
+    public void allAddMethods() {
     }
 }

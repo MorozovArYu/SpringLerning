@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-@Order(3)
+@Order(30)
 public class ExceptionHandlerAspect {
-    @Before("com.gmail.morozowau.aop.aspects.Pointcuts.pointcut_reference()")
-    public void beforeGetExceptionHandlingAdvice(){
-        System.out.println("beforeGetExceptionHandlingAdvice: Handling exception ...");
+    @Before("com.gmail.morozowau.aop.aspects.Pointcuts.allAddMethods()")
+    public void beforeAddExceptionHandlingAdvice(){
+        System.out.println("beforeGetExceptionHandlingAdvice: Handling exception ...\n");
     }
 }
