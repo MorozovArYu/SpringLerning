@@ -20,15 +20,18 @@ public class OneToOne {
             session = factory.getCurrentSession(); // Создаем сессию
             session.beginTransaction();
 
-            // Пример добавления работника с его деталями
-            /*Employee employee = new Employee("Oleg", "Smirnov", "it", 10);
-            Detail detail = new Detail("Moscow", "+79609363535", "OlegO@g.com");
+            // Example first
+      /*      Employee employee = new Employee("Nikolay", "Ivanov", "it", 110);
+            Detail detail = new Detail("New-York", "+76709513535", "Niko@g.com");
             employee.setEmpDetail(detail);
+            detail.setEmployee(employee);
+
             session.save(employee);*/
 
-            Employee employee = session.get(Employee.class, 2);
+            Detail detail = session.get(Detail.class, 3);
+            session.delete(detail);
+            System.out.println(detail.getEmployee());
 
-            session.delete(employee);
 
             session.getTransaction().commit();
             System.out.println("done");
